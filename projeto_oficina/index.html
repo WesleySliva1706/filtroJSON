@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>Projeto Oficina</title>
+
+        <meta charset="utf-8">
+        <meta name="format-detection" content="telefone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=decive-width, viewport-fit=cover">
+        <meta name="color-scheme" content="light dark">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="js/funcoes.js"></script>
+
+    </head>
+    <body>
+                        
+            <div class="form-group">
+
+                <table border="1">
+                    <thead>
+        
+                        <tr>
+                            <th scope="col">
+
+                                <select required="" class="form-control" id="filtro">
+
+                                    <option value="TODOS">Todos</option>
+                                    <option value="MARCA">Marca</option>
+                                    <option value="CARRO">Carro</option>
+                                    <option value="CAMBER_DIANTEIRO_MIN">Camber Dianteiro Mínimo</option>
+                                    <option value="CAMBER_DIANTEIRO_MAX">Camber Dianteiro Máximo</option>
+                                    <option value="CASTER_DIANTEIRO_MIN">Caster Dianteiro Mínimo</option>
+                                    <option value="CASTER_DIANTEIRO_MAX">Caster Dianteiro Máximo</option>
+                                    <option value="CONVERGENCIA_DIANTEIRA_MIN">Convergência Dianteira Mínimo</option>
+                                    <option value="CONVERGENCIA_DIANTEIRA_MAX">Convergência Dianteira Máximo</option>
+                                    <option value="CAMBER_TRASEIRA_MIN">Camber Traseiro Mínimo</option>
+                                    <option value="CAMBER_TRASEIRA_MAX">Camber Traseiro Máximo</option>
+                                    <option value="CONVERGENCIA_TRASEIRA_MIN">Convergência Traseiro Mínimo</option>
+                                    <option value="CONVERGENCIA_TRASEIRA_MAX">Convergência Traseiro Máximo</option>
+                
+                                </select>
+
+                            </th>
+
+                            <th scope="col">
+
+                                <input type="text" class="form-control" id="txtInput" placeholder="Marca/Carro:">
+
+                            </th>
+
+                        <th scope="col">
+                            <button type="submit" onclick="search()" class="btn my-2">Pesquisar</button>
+                            <button type="submit" onclick="limparFiltros()" class="btn my-2">Limpar Filtros</button>
+                        </th>
+
+                    </tr>
+        
+                    </thead>
+
+                </table>
+
+            </div>
+
+        <table border="1">
+            <thead>
+
+                <tr>
+                    <th scope="col">Marca</th>
+                    <th scope="col">Carro</th>
+                    <th scope="col">Camber Dianteiro Mínimo</th>
+                    <th scope="col">Camber Dianteiro Máximo</th>
+                    <th scope="col">Caster Dianteiro Mínimo</th>
+                    <th scope="col">Caster Dianteiro Máximo</th>
+                    <th scope="col">Convergência Dianteira Mínimo</th>
+                    <th scope="col">Convergência Dianteira Máximo</th>
+                    <th scope="col">Camber Traseiro Mínimo</th>
+                    <th scope="col">Camber Traseiro Máximo</th>
+                    <th scope="col">Convergência Traseiro Mínimo</th>
+                    <th scope="col">Convergência Traseiro Máximo</th>
+                </tr>
+
+            </thead>
+
+            <tbody id="TableData"></tbody>
+
+        </table>
+    </body>
+</html>
